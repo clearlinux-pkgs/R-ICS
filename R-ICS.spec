@@ -4,7 +4,7 @@
 #
 Name     : R-ICS
 Version  : 1.3.1
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/ICS_1.3-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ICS_1.3-1.tar.gz
 Summary  : Tools for Exploring Multivariate Data via ICS/ICA
