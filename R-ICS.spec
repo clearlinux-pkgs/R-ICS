@@ -4,19 +4,19 @@
 #
 Name     : R-ICS
 Version  : 1.3.1
-Release  : 22
+Release  : 23
 URL      : https://cran.r-project.org/src/contrib/ICS_1.3-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/ICS_1.3-1.tar.gz
 Summary  : Tools for Exploring Multivariate Data via ICS/ICA
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-mvtnorm
-Requires: R-robustbase
 Requires: R-survey
 BuildRequires : R-mvtnorm
 BuildRequires : R-robustbase
 BuildRequires : R-survey
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 No detailed description available
@@ -29,10 +29,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1569359529
+export SOURCE_DATE_EPOCH=1571845847
 
 %install
-export SOURCE_DATE_EPOCH=1569359529
+export SOURCE_DATE_EPOCH=1571845847
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
