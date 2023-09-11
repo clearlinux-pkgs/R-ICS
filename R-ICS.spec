@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-ICS
-Version  : 1.3.2
-Release  : 49
-URL      : https://cran.r-project.org/src/contrib/ICS_1.3-2.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/ICS_1.3-2.tar.gz
+Version  : 1.4.0
+Release  : 50
+URL      : https://cran.r-project.org/src/contrib/ICS_1.4-0.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/ICS_1.4-0.tar.gz
 Summary  : Tools for Exploring Multivariate Data via ICS/ICA
 Group    : Development/Tools
 License  : GPL-2.0+
@@ -35,10 +35,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685642289
+export SOURCE_DATE_EPOCH=1694449277
 
 %install
-export SOURCE_DATE_EPOCH=1685642289
+export SOURCE_DATE_EPOCH=1694449277
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -80,7 +80,6 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/R/library/ICS/CHANGES
 /usr/lib64/R/library/ICS/CITATION
 /usr/lib64/R/library/ICS/DESCRIPTION
 /usr/lib64/R/library/ICS/INDEX
@@ -92,6 +91,7 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/ICS/Meta/package.rds
 /usr/lib64/R/library/ICS/Meta/vignette.rds
 /usr/lib64/R/library/ICS/NAMESPACE
+/usr/lib64/R/library/ICS/NEWS
 /usr/lib64/R/library/ICS/R/ICS
 /usr/lib64/R/library/ICS/R/ICS.rdb
 /usr/lib64/R/library/ICS/R/ICS.rdx
@@ -109,3 +109,5 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 /usr/lib64/R/library/ICS/pictures/cat.pgm
 /usr/lib64/R/library/ICS/pictures/road.pgm
 /usr/lib64/R/library/ICS/pictures/sheep.pgm
+/usr/lib64/R/library/ICS/tests/testthat.R
+/usr/lib64/R/library/ICS/tests/testthat/test-ICS_S3_tests.R
